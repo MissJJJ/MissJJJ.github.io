@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <link rel="stylesheet" href="membershipForm.css">
+    <script src="membershipForm.js" defer></script>
+</head>
+<body>
+    <h2>Membership Form</h2>
+    <div class="centerForm">
+        <form name="membershipForm">
+            <fieldset id="custInfo">
+                <div class="formRow">
+                    <label for="fName">First Name </label><br>
+                    <input class="textbox" name="fName" id="fName" size="18" type="text" />
+                </div>
+        
+                <div class="formRow">
+                    <label for="lName">Last Name </label><br>
+                    <input class="textbox" name="lName" id="lName" size="18" type="text" />
+                </div>
+        
+                <div class="formRow">
+                    <label for="address">Address </label><br>
+                    <input class="textbox" name="custAddress" id="address" size="28" type="text" />
+                </div>
+        
+                <div class="formRow">
+                    <label for="city">City </label><br>
+                    <input class="textbox" name="custCity" id="city" size="10" type="text" />
+                </div>
+        
+                <div class="formRow">
+                    <label for="state">State </label><br>
+                    <input class="textbox" name="custState" id="state" size="2" type="text" />
+                </div>
+        
+                <div class="formRow">
+                    <label for="zip">Zip </label><br>
+                    <input class="textbox" name="custZip" id="zip" size="15" type="text" />
+                </div>
+        
+                <div class="formRow">
+                    <label for="phone">Phone Number </label><br>
+                    <input class="textbox" name="custPhone" id="phone" type="tel" />
+                </div>
+        
+                <div class="formRow">
+                    <label for="mail">E-mail </label><br>
+                    <input class="textbox" name="custEmail" id="mail" type="email" placeholder="@email.com"/>
+                </div>
+        
+                <div class="formRow">
+                    <label for="birthday">Date of Birth (optional)</label><br>
+                    <input class="textbox" name="birthday" id="birthday" type="date" />
+                </div>
+        
+                <div id="buttons">
+                    <input class="btns" type="button" value="Submit" onClick="doSubmit()">
+                    <input class="btns" type="button" value="Clear" onClick="doClear()">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    
+    <audio controls autoplay loop id="myaudio">
+        <source src="Advertime.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="hamburgerBar.js" defer></script>
+    <script src="slideshow.js" defer></script>
+</head>
+
+<body>
+    <!-- Hamburger Navbar-->
+    <header>
+        <h1>Energy Zone</h1>
+        <nav class="topnav">
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="menuBar()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <!-- Hidden links -->
+            <div id="hiddenLinks">
+                <a href="index.html">Home</a>
+                <a href="activities.html">Activities</a>
+                <a href="membershipForm.html">Membership</a>
+                <a href="index.html">About us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slideshow -->
+    <div class="section">
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides">
+                <img src="images/home1.jpg" alt="Exercise picture 1" 
+                style="width: 100%"> 
+            </div>
+    
+            <div class="mySlides">
+                <img src="images/home2.jpg" alt="Exercise picture 2" 
+                style="width: 100%"> 
+            </div>
+    
+            <div class="mySlides">
+                <img src="images/home4.jpg" alt="Exercise picture 3" 
+                style="width: 100%"> 
+            </div>
+    
+            <div class="mySlides">
+                <img src="images/home3.jpg" alt="Exercise picture 4" 
+                style="width: 100%"> 
+            </div>
+    
+            <div class="mySlides">
+                <img src="images/home5.jpg" alt="Exercise picture 5" 
+                style="width: 100%"> 
+            </div>
+    
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+
+    <aside>
+        <span id="text1">GET READY TO</span>
+        <br>
+        <span id="text2">BURN</span>
+        <br>
+        <a href="membershipForm.html">Join now</a>
+    </aside>
+
+    <!-- Coach profile-->
+    <div class="coach-profile-group">
+        <div class="coach-profile">
+            <a href="#">
+                <img class="coach-img" src="images/user-icon.png" alt="user-icon">
+            </a>
+            <p class="coach-name">James Johnson</p>
+        </div>
+        <div class="coach-profile">
+            <a href="#">
+                <img class="coach-img" src="images/user-icon.png" alt="user-icon">
+            </a>
+            <p class="coach-name">Susan Connor</p>
+        </div>
+        <div class="coach-profile">
+            <a href="#">
+                <img class="coach-img" src="images/user-icon.png" alt="user-icon">
+            </a>
+            <p class="coach-name">Jeff Perry</p>
+        </div>
+        <div class="coach-profile">
+            <a href="#">
+                <img class="coach-img" src="images/user-icon.png" alt="user-icon">
+            </a>
+            <p class="coach-name">Ashley Fogarty</p>
+        </div>
+        <div class="coach-profile">
+            <a href="#">
+                <img class="coach-img" src="images/user-icon.png" alt="user-icon">
+            </a>
+            <p class="coach-name">Patrick Breakforest</p>
+        </div>
+        <div class="coach-profile">
+            <a href="#">
+                <img class="coach-img" src="images/user-icon.png" alt="user-icon">
+            </a>
+            <p class="coach-name">Anna Catmire</p>
+        </div>
+        <div class="coach-profile">
+            <a href="#">
+                <img class="coach-img" src="images/user-icon.png" alt="user-icon">
+            </a>
+            <p class="coach-name">Elsie Mooney</p>
+        </div>
+        <div class="coach-profile">
+            <a href="#">
+                <img class="coach-img" src="images/user-icon.png" alt="user-icon">
+            </a>
+            <p class="coach-name">Rachel Green</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="column">
+                <p class="center">Location</p>
+                <p>1400 Bergen St, Brooklyn, NY 11213</p><br>
+                <p class="center">Hours</p>
+                <p>Mon-Thur: 8:00am-9:00pm</p>
+                <p>Fri-Sun: Open 24 hours</p><br>
+                <p><a href="tel:718-262-9655">Tel: 718-262-9655</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                   <a href="mailto:energyZone.gmail.com">Email: energyZone.gmail.com</a></p>
+            </div>
+            <div class="column">
+                <p class="center">Location</p>
+                <p>2375 E Tremont Ave, Bronx, NY 10462</p><br>
+                <p class="center">Hours</p>
+                <p>Mon-Wed: 6:00am-10:00pm</p>
+                <p>Thur-Sun: Open 24 hours</p><br>
+                <p><a href="tel:718-996-3029">Tel: 718-996-3029</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                   <a href="mailto:energyZone.gmail.com">Email: energyZone.gmail.com</a></p>
+            </div>
+            <div class="column"><p class="center">Location</p>
+                <p>100 Lexington Ave, Manhattan, NY 10016</p><br>
+                <p class="center">Hours</p>
+                <p>Mon & Wed: 10:00am-12:00pm</p>
+                <p>Tue, Thur-Sun: 6:00am-8:00pm</p><br>
+                <p><a href="tel:212-767-4545">Tel: 212-767-4545</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                   <a href="mailto:energyZone.gmail.com">Email: energyZone.gmail.com</a></p>
+            </div>
+            <div class="column">
+                <p class="center">Location</p>
+                <p>225 E 26th St, New York, NY 10010</p><br>
+                <p class="center">Hours</p>
+                <p>Mon-Fri: 10:00am-12:00pm</p>
+                <p>Sat-Sun: 5:00am-9pm</p><br>
+                <p><a href="tel:718-233-6999">Tel: 718-233-6999</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                   <a href="mailto:energyZone.gmail.com">Email: energyZone.gmail.com</a></p>
+            </div>
+          </div>
+    </footer>
+
+</body>
+</html>

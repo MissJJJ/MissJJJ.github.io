@@ -1,0 +1,109 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+}
+/*-------------------------- Video Background ------------------*/
+/* Style the video: 100% width and height to cover the entire window */
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 6rem;
+    background: azure;
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+    opacity: 0.85;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+@media only screen and (max-width: 769px) {
+    .section h1 {
+        font-size: 3rem;
+    }
+}
+/*---------------------------- Style coach section ---------------------------*/
+.activities {
+    width: 100%;
+    display: grid;    
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+}
+.act-sets{
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    display: inline-block;
+    opacity: 0.9;
+}
+act-sets > a{
+    text-decoration: none;
+}
+.act-pics{
+    object-fit: cover;
+    height:200px;
+    width: 200px;
+    border-radius: 20%;
+    border-color:bisque;
+    border-style: solid;
+    border-width: 5px;
+}
+.act-name{
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (max-width: 425px){
+    .activities{
+        grid-template-columns: auto auto;
+    }
+    .act-pics{
+        object-fit: cover;
+        height:100px;
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 769px){
+    .activities{
+        grid-template-columns: auto auto;
+    }
+}
+/*------------------------------ Style audio ---------------------------*/
+audio{
+    margin-top: 100px;
+}
+
+/*-------------------------------Style footer---------------------------*/
+footer > div > p > a{
+    text-decoration: none;
+    color: white;
+}
+footer > div > h2{
+    margin-bottom: 10px;
+    color:white;
+}
+footer > div > p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+footer{
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    margin-top: 100px;
+}
